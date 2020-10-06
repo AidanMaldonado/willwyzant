@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/wave.jpg");
+}
+
+@font-face {
+  font-family: "OurFont";
+  src: url("fonts/SansitaSwashed-Black.ttf");
+}
+
+p {
+  font-family: "OurFont";
+}
+
+nav {
+  background: grey;
+  min-height: 20vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first-section {
+  margin: 5rem;
+  border: 2px solid black;
+  min-height: 25vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#text-div {
+  width: 50%;
+}
+
+#img-div {
+  margin-top: 4rem;
+  width: 50%;
+}
+
+img {
+  height: 10rem;
+  width: 10rem;
+}
+
+header {
+  position: relative;
+}
+
+#pic {
+  left: 15vw;
+  top: 10vh;
+  position: absolute;
+  border-radius: 40rem;
+}
+
+#pic img {
+  border-radius: 60%;
+}
+
+/*Grid */
+#grid {
+  /* Position on page */
+  right: 15vw;
+  top: 10vh;
+  position: absolute;
+
+  /* Grid */
+  width: 100px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 60px 60px;
+  grid-row: auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (max-width: 520px) {
+  #text-div {
+    margin: 0;
+  }
+
+  #first-section {
+    margin: 0;
+  }
+}
